@@ -1,6 +1,6 @@
 ## Heading number # 
 
-I'm just typing some text
+I'm just typing some texto
 
 | Preço | Column2 | Column3 | Column4 | Column5 |
 | --------------- | --------------- | --------------- | --------------- | --------------- |
