@@ -8,3 +8,5 @@ potencia = calcular_potencia(tensao, corrente)
 
 print("--- Calculadora de Carga ---")
 print(f"Potencia resultante: {potencia} Watts")
+
+# Projeto em desenvolvimento
