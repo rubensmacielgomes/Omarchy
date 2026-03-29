@@ -4,5 +4,3 @@ def run(msg: str) -> None:
 
 if __name__ == "__name__":
     run("Olá Mundo")
-name = "rubens"
-print(name)
