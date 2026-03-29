@@ -10,3 +10,8 @@ dependencies = [
 
 [project.optional-dependencies]
 dev = ["ruff", "pyright"]
+
+[tool.uv.workspace]
+members = [
+    "laboratorio/ test_lab ",
+]
