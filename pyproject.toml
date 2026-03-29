@@ -7,3 +7,6 @@ requires-python = ">=3.14"
 dependencies = [
     "numpy>=2.4.3",
 ]
+
+[project.optional-dependencies]
+dev = ["ruff", "pyright"]
