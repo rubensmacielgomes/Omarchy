@@ -4,14 +4,24 @@ version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.14"
-dependencies = [
-    "numpy>=2.4.3",
-]
+dependencies = ["numpy>=2.4.3"]
 
 [project.optional-dependencies]
 dev = ["ruff", "pyright"]
 
 [tool.uv.workspace]
-members = [
-    "laboratorio/ test_lab ",
-]
+members = ["laboratorio/ test_lab "]
+
+[tool.pyright]
+typeCheckingMode = "basic"
+pythonVersion = "3.10"     # Ajuste para a sua versão do Python
+
+# Regras de "Segurança Equilibrada"
+reportUnusedImport = "warning"
+reportUnusedVariable = "warning"
+reportMissingTypeStubs = false       # Não reclama se a lib externa não tiver tipos
+reportUnknownMemberType = false      # Não te obriga a tipar tudo de libs terceiras
+reportGeneralTypeIssues = "error"    # Erro se você passar o tipo errado
+reportOptionalMemberAccess = "error" # Evita erro de 'NoneType' object has no attribute
+reportOptionalSubscript = "error"    # Evita erro de 'NoneType' object is not subscriptable
+reportPrivateUsage = "warning"       # Avisa se você acessar métodos com "_" (internos)
