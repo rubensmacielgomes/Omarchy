@@ -12,7 +12,7 @@ else:
 status = "Acesso permitido" if idade >= 18 else "Acesso negado"
 
 # 3.Match Case (Estrutural Pattern Matching)
-comando = "sair"
+comando = input("Digite um comando: ")
 
 match comando:
     case "iniciar":
